@@ -1,0 +1,1 @@
+cat h2b.uhin | tr -d 'A-Za-z0-9^#[].\\*{}()<>@ %"|/,;:+\t-' | tr -s '\n' | awk '{if(NF)print $0}'
